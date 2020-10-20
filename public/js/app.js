@@ -3045,6 +3045,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -25278,7 +25283,7 @@ var render = function() {
                 [
                   _c(
                     "inertia-link",
-                    { attrs: { href: _vm.route("dashboard") } },
+                    { attrs: { href: _vm.route("posts.index") } },
                     [
                       _c("jet-application-mark", {
                         staticClass: "block h-9 w-auto"
@@ -25304,7 +25309,29 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                            Dashboard\n                        "
+                        "\n                            トップ\n                        "
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" },
+                [
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
+                        href: _vm.route("posts.index"),
+                        active: _vm.$page.currentRouteName == "posts.index"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            投稿一覧\n                        "
                       )
                     ]
                   )
@@ -25683,7 +25710,7 @@ var render = function() {
               { staticClass: "pt-2 pb-3 space-y-1" },
               [
                 _c(
-                  "jet-responsive-nav-link",
+                  "jet-lresponsive-nav-link",
                   {
                     attrs: {
                       href: _vm.route("dashboard"),
