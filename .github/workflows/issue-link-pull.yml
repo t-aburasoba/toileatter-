@@ -1,0 +1,13 @@
+name: Issue Links
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: When pull_request opened, move the connected issue to the column
+        uses: wktk/github-project-connect-action@v1
+        with:
+          github-token: ${{ secrets.TOILET_TOKEN }}
+          column-url: https://github.com/t-aburasoba/toileatter-/projects/1#column-11605046
