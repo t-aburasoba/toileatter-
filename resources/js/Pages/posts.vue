@@ -22,6 +22,7 @@
                                 <th class="px-4 py-2 w-20">No.</th>
                                 <th class="px-4 py-2">Title</th>
                                 <th class="px-4 py-2">Body</th>
+                                <th class="px-4 py-2">Image</th>
                                 <th class="px-4 py-2">Action</th>
                             </tr>
                         </thead>
@@ -29,6 +30,7 @@
                             <tr v-for="row in data">
                                 <td class="border px-4 py-2">{{ row.id }}</td>
                                 <td class="border px-4 py-2">{{ row.title }}</td>
+                                <td class="border px-4 py-2">{{ row.body }}</td>
                                 <td class="border px-4 py-2">{{ row.body }}</td>
                                 <td class="border px-4 py-2">
                                     <button @click="edit(row)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
